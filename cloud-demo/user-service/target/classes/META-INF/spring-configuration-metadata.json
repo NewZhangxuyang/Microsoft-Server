@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "name": "remoteconfiguration",
+      "type": "cn.itcast.user.config.RemoteConfiguration",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "remoteconfiguration.age",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "remoteconfiguration.country",
+      "type": "java.lang.String",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration"
+    },
+    {
+      "name": "remoteconfiguration.email",
+      "type": "java.lang.String",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration"
+    },
+    {
+      "name": "remoteconfiguration.home",
+      "type": "java.lang.String",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration"
+    },
+    {
+      "name": "remoteconfiguration.name",
+      "type": "java.lang.String",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration"
+    },
+    {
+      "name": "remoteconfiguration.nation",
+      "type": "java.lang.String",
+      "sourceType": "cn.itcast.user.config.RemoteConfiguration"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,3 @@
+cn\wzd\feign\client\UserClient.class
+cn\wzd\feign\config\FeignConfiguration.class
+cn\wzd\feign\pojo\User.class

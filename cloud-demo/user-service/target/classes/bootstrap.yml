@@ -1,0 +1,14 @@
+spring:
+   application:
+     name: user
+   profiles:
+#     可在EditorConfiguration里编辑激活环境
+     active: dev
+   cloud:
+      nacos:
+        server-addr: 192.168.102.55:8848
+        config:
+          file-extension: yml
+remoteconfiguration:
+  name: zxy
+  email: zhangxuyang@qq.com

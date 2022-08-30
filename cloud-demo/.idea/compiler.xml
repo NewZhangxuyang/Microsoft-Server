@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aip" />
         <module name="Eureka-server" />
-        <module name="order-service" />
-        <module name="user-service" />
         <module name="Feign-api" />
+        <module name="order-service" />
+        <module name="GateWay" />
+        <module name="aip" />
+        <module name="user-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="cloud-demo" target="1.8" />
       <module name="Eureka-server" target="1.8" />
       <module name="Feign-api" target="1.8" />
+      <module name="GateWay" target="1.8" />
       <module name="order-service" target="1.8" />
       <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
@@ -27,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Eureka-server" options="-parameters" />
       <module name="Feign-api" options="-parameters" />
+      <module name="GateWay" options="-parameters" />
       <module name="aip" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="user-service" options="-parameters" />

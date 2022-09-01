@@ -63,12 +63,7 @@
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="alllog" />
         <appender-ref ref="errorlog" />
-    </root>
-    <!--可输出mapper层sql语句等-->
-    <logger name="cn.itcast.order.mapper" level="debug"></logger>
-    <!-- Feign的日志管理 -->
-    <logger name="cn.wzd.feign" level="debug"></logger>
-    <!--输出jdbc 事务相关信息-->
-    <logger name="org.springframework.jdbc" level="debug"></logger>
-
+    </root >
+    <!--切入    -->
+    <logger name="cn.wzd.gateway" level="debug"></logger>
 </configuration>

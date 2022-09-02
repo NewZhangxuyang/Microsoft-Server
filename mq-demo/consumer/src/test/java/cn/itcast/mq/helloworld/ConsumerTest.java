@@ -11,11 +11,11 @@ public class ConsumerTest {
         // 1.建立连接
         ConnectionFactory factory = new ConnectionFactory();
         // 1.1.设置连接参数，分别是：主机名、端口号、vhost、用户名、密码
-        factory.setHost("192.168.150.101");
+        factory.setHost("192.168.102.55");
         factory.setPort(5672);
         factory.setVirtualHost("/");
-        factory.setUsername("itcast");
-        factory.setPassword("123321");
+        factory.setUsername("root");
+        factory.setPassword("root");
         // 1.2.建立连接
         Connection connection = factory.newConnection();
 
@@ -33,9 +33,9 @@ public class ConsumerTest {
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
                 // 5.处理消息
                 String message = new String(body);
-                System.out.println("接收到消息：【" + message + "】");
+                System.out.println("回调函数执行，接收到消息：【" + message + "】");
             }
         });
-        System.out.println("等待接收消息。。。。");
+        System.out.println("业务放行，无需阻塞调用，等待接收消息。。。。");
     }
 }

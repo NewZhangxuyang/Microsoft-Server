@@ -1,0 +1,10 @@
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\InitApplication.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\web\SystemUserController.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\common\BatchResult.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\common\SingleResult.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\UserApplication.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\config\RemoteConfiguration.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\mapper\UserMapper.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\common\BaseModel.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\pojo\SystemUser.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\service\SystemUserService.java

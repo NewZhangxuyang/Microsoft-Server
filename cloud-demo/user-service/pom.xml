@@ -55,17 +55,33 @@
             <scope>provided</scope>
             <version>2.1.9.RELEASE</version>
         </dependency>
-
-
-
     </dependencies>
 
+
     <build>
-        <finalName>app</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>dockerfile-maven-plugin</artifactId>
+                    <version>1.4.10</version>
+                    <configuration>
+                        <googleContainerRegistryEnabled>false</googleContainerRegistryEnabled>
+                        <repository>user-server</repository>
+                        <tag>${project.version}</tag>
+                    </configuration>
+                <executions>
+                    <execution>
+                        <id>GetDocker</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

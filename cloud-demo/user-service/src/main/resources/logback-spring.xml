@@ -59,7 +59,7 @@
         </filter>
     </appender>
     <!-- root 级别的配置 -->
-    <root level="INFO">
+    <root level="debug">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="alllog" />
         <appender-ref ref="errorlog" />

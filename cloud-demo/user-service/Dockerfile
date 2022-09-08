@@ -17,4 +17,4 @@ ADD target/user-service-1.0.jar  user-service.jar
 # -Djava.security.egd=file:/dev/./urandom 可解决tomcat可能启动慢的问题
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/user-service.jar"]
 # 对外端口
-EXPOSE 8081
+EXPOSE 8083

@@ -22,8 +22,6 @@ public class OrderService {
 
     @Autowired
     private UserClient userClient;
-
-
     /**
      * @param orderId: 订单的编号
      * @return: cn.itcast.order.pojo.Order

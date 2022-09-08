@@ -24,8 +24,6 @@ public class SystemUserController {
     @Autowired
     private RemoteConfiguration remoteConfiguration;
 
-
-
     /**
      * @param id:用户识别唯一字段
      * @return: cn.itcast.user.pojo.SystemUser

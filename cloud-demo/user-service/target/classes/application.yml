@@ -1,17 +1,15 @@
 server:
-  port: 8081
+  port: 8083
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/user-server?useSSL=false
-    username: root
-    password:
+    url: jdbc:mysql://192.168.102.206:3306/userDB?useSSL=false
+    username: userserver
+    password: userserver
     driver-class-name: com.mysql.jdbc.Driver
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
     map-underscore-to-camel-case: true
 logging:
-  level:
-    cn.itcast: info
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS

@@ -54,18 +54,37 @@
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
 
+
         <dependency>
             <groupId>cn.itcast.demo</groupId>
             <artifactId>feign-api</artifactId>
             <version>1.0</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.10</version>
+                <configuration>
+                    <googleContainerRegistryEnabled>false</googleContainerRegistryEnabled>
+                    <repository>order-server</repository>
+                    <tag>${project.version}</tag>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>GetDocker</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

@@ -5,12 +5,12 @@ spring:
     name: account-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql:///seata_demo?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql:///seata?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
     username: root
-    password: 123
+    password:
   cloud:
     nacos:
-      server-addr: localhost:8848
+      server-addr: 192.168.102.55:8848
 mybatis-plus:
   global-config:
     db-config:
@@ -27,7 +27,7 @@ seata:
   registry:
     type: nacos
     nacos:
-      server-addr: 127.0.0.1:8848
+      server-addr: 192.168.102.55:8848
       namespace: ""
       group: DEFAULT_GROUP
       application: seata-tc-server
@@ -41,7 +41,7 @@ seata:
   config:
     type: nacos
     nacos:
-      server-addr: 127.0.0.1:8848
+      server-addr: 192.168.102.55:8848
       username: nacos
       password: nacos
       group: SEATA_GROUP

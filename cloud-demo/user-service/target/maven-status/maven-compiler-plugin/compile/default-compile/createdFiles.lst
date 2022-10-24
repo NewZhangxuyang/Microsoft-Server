@@ -6,6 +6,5 @@ cn\itcast\user\config\RemoteConfiguration.class
 META-INF\spring-configuration-metadata.json
 cn\itcast\user\mapper\UserMapper.class
 cn\itcast\user\service\SystemUserService.class
-cn\itcast\user\pojo\SystemUser.class
 cn\itcast\user\UserApplication.class
 cn\itcast\user\web\SystemUserController.class

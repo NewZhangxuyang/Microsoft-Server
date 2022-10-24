@@ -1,6 +1,6 @@
 package cn.itcast.user.mapper;
 
-import cn.itcast.user.pojo.SystemUser;
+import cn.wzd.common.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -12,5 +12,5 @@ import org.apache.ibatis.annotations.Select;
 public interface UserMapper {
 
     @Select("select * from tb_user where id = #{id}")
-    SystemUser findById(@Param("id") Long id);
+    User findById(@Param("id") Long id);
 }

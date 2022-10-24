@@ -13,6 +13,20 @@ spring:
       server-addr: 192.168.102.55:8848
       discovery:
         cluster-name: local-group
+    sentinel:
+      transport:
+        dashboard: localhost:10011
+#        port: 8898
+      #去除链路整合,注意SCSAS版本,过早的RELEASE是没有的
+      web-context-unify: false
+      datasource:
+        flow:
+          nacos:
+            server-addr: 192.168.102.55:8848
+            dataId: orderservice-flow-rules
+            groupId: SENTINEL_GROUP
+            rule-type: flow
+
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -21,3 +35,10 @@ mybatis:
     dateformat: MM-dd HH:mm:ss:SSS
 logging:
   config: classpath:logback-spring.xml
+dubbo:
+  application:
+    name: dubbo-order-service
+  registry:
+    address: nacos://192.168.102.55:8848
+    parameters:
+

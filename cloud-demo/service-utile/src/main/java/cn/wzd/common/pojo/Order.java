@@ -1,0 +1,25 @@
+package cn.wzd.common.pojo;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * <p>@Description: 当前</p>
+ *
+ * @ClassName: cn.wzd.common.pojo.Order
+ * @BelongsProject: cloud-demo
+ * @BelongsPackage: PACKAGE_NAME
+ * @Author: 张旭阳
+ * @CreateTime: 2022-10-09  14:38
+ */
+@Data
+public class Order  implements Serializable {
+    private Long id;
+    private Long price;
+    private String name;
+    private Integer num;
+    private Long userId;
+    private User user;
+
+}

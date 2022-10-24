@@ -4,6 +4,7 @@ D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\common\BatchR
 D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\common\SingleResult.java
 D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\UserApplication.java
 D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\config\RemoteConfiguration.java
+D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\service\Imp\SystemUserServiceImp.java
 D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\mapper\UserMapper.java
 D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\common\BaseModel.java
 D:\cloud-demo\cloud-demo\user-service\src\main\java\cn\itcast\user\pojo\SystemUser.java

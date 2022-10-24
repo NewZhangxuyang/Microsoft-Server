@@ -1,24 +1,22 @@
 package cn.itcast.user.service;
 
-import cn.itcast.user.mapper.UserMapper;
-import cn.itcast.user.pojo.SystemUser;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
+import cn.wzd.common.pojo.User;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
- * @author zhangxuyang
- * @date 2022/8/23 17:31
+ * <p>@Description: 当前</p>
+ *
+ * @ClassName: SystemUserService
+ * @BelongsProject: cloud-demo
+ * @BelongsPackage: cn.itcast.user.service
+ * @Author: 张旭阳
+ * @CreateTime: 2022-10-09  10:52
  */
-@Slf4j
-@Service
-public class SystemUserService {
-
-    @Autowired
-    private UserMapper userMapper;
-
-    public SystemUser queryById(Long id) {
-        return userMapper.findById(id);
-    }
+public interface SystemUserService {
+   /**
+    * <p>@description:</p>
+    * @param id:
+    * @return: cn.itcast.user.pojo.SystemUser
+    */
+    public User queryById(Long id);
 }

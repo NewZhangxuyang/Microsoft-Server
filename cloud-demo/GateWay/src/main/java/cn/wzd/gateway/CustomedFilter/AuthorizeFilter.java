@@ -3,6 +3,7 @@ package cn.wzd.gateway.CustomedFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
@@ -22,6 +23,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
     private static final String authorizedUser = "admin";
 
     /**
+     * @Description<><p> configure the filter confirm request's params Key-Value <p/></>
      * @param exchange:
      * @param chain:
      * @return: reactor.core.publisher.Mono<java.lang.Void>
@@ -30,8 +32,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
      */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-
-        ServerHttpRequest request= exchange.getRequest();
+        ServerHttpRequest  request = exchange.getRequest().mutate().header("origin","gateWay").build();
         MultiValueMap<String, String> queryParams = request.getQueryParams();
         String  authorized = queryParams.getFirst("Authorization");
         if (authorizedUser.equals(authorized)){

@@ -13,25 +13,32 @@
         <module name="GateWay" />
         <module name="aip" />
         <module name="user-service" />
+        <module name="service-utile" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aip" target="1.8" />
       <module name="cloud-demo" target="1.8" />
+      <module name="Common-Utils" target="1.8" />
+      <module name="common-utils" target="1.8" />
       <module name="Eureka-server" target="1.8" />
       <module name="Feign-api" target="1.8" />
       <module name="GateWay" target="1.8" />
       <module name="order-service" target="1.8" />
+      <module name="service-utile" target="1.8" />
       <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Common-Utils" options="-parameters" />
       <module name="Eureka-server" options="-parameters" />
       <module name="Feign-api" options="-parameters" />
       <module name="GateWay" options="-parameters" />
       <module name="aip" options="-parameters" />
+      <module name="common-utils" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="service-utile" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

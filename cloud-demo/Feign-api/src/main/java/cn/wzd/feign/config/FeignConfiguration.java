@@ -1,5 +1,6 @@
 package cn.wzd.feign.config;
 
+import cn.wzd.feign.client.sentinelfallback.UserClientFallBack;
 import feign.Logger;
 import org.springframework.context.annotation.Bean;
 
@@ -20,4 +21,11 @@ public class FeignConfiguration {
     public Logger.Level setFeignLogLevel(){
         return Logger.Level.FULL;
     }
+
+
+    @Bean
+    public UserClientFallBack userClientFallBack(){
+        return  new UserClientFallBack();
+    }
+
 }

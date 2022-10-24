@@ -9,6 +9,19 @@ spring:
         server-addr: 192.168.102.55:8848
         config:
           file-extension: yml
+      sentinel:
+        transport:
+          dashboard: 192.168.102.55:11110
+dubbo:
+  protocol:
+    name: dubbo
+    port: 10000
+  registry:
+    address: nacos://192.168.102.55:8848
+    parameters:
+      register-consumer-url: true
+  application:
+    name: dubbo-user-service
 remoteconfiguration:
   name: zxy
   email: zhangxuyang@qq.com
